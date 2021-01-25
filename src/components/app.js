@@ -5,15 +5,14 @@ import Header from './header';
 
 // Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
-import Profile from '../routes/profile';
+import ReactIntersectionObserverPage from '../routes/react-intersection-observer';
 
 const App = () => (
 	<div id="app">
 		<Header />
 		<Router>
 			<Home path="/" />
-			<Profile path="/profile/" user="me" />
-			<Profile path="/profile/:user" />
+			<ReactIntersectionObserverPage path="/react-intersection-observer/" />
 		</Router>
 	</div>
 )

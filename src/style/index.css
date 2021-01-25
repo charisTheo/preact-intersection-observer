@@ -18,3 +18,38 @@ html, body {
 #app {
 	height: 100%;
 }
+
+section {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: block;
+	transform: translateZ(0);
+}
+
+@media screen and (min-width: 767px) {
+	html, body {
+		max-width: 800px;
+		background-color: #000;
+		color: #fff
+	}
+	section {
+		animation: appear 1s linear 0s;
+	}
+
+	@keyframes appear {
+		from {
+			transform: scale(0)
+		}
+		to {
+			transform: scale(1)
+		}
+	}
+}
+@media screen and (min-width: 959px) {
+	html, body {
+		color: #444;
+		font-size: 22px;	
+	}
+}
