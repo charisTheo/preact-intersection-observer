@@ -1,0 +1,9 @@
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    color: aquamarine;
+    min-height: 150px;
+    margin: 0;
+    padding: 20px
+}

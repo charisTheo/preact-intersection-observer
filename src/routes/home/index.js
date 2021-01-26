@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import style from './style.css';
 import Section from '../../components/section';
-import ObserveOnce from '../../components/ObserverOnce';
+import ObserveOnce from '../../components/observeOnce';
 
 const Home = () => (
 	<div class={style.home}>

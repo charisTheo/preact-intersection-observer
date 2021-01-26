@@ -2,10 +2,9 @@ import { h } from 'preact';
 import { Router } from 'preact-router';
 
 import Header from './header';
-
-// Code-splitting is automated for `routes` directory
 import Home from '../routes/home';
 import ReactIntersectionObserverPage from '../routes/react-intersection-observer';
+import LazyObserver from './lazyObserver';
 
 const App = () => (
 	<div id="app">
@@ -14,6 +13,8 @@ const App = () => (
 			<Home path="/" />
 			<ReactIntersectionObserverPage path="/react-intersection-observer/" />
 		</Router>
+		{/* componentDir - relative to /src/components/ directory */}
+		<LazyObserver componentDir="footer" componentProps={{ date: new Date() }} />
 	</div>
 )
 
